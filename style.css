@@ -6,15 +6,15 @@
 }
 
 body{
-  background: linear-gradient(135deg, #ffe6f0, #fff0f5);
+  background: linear-gradient(135deg, #fff5f7, #ffe6f0); /* وردي فاتح جدًا */
   color:#333;
   line-height:1.6;
 }
 
-/* Header */
+/* ===== Header ===== */
 .header{
-  background: rgba(255,182,193,0.9);
-  padding:15px 0;
+  background: rgba(255,182,193,0.95); /* وردي فاتح */
+  padding:20px 0;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
@@ -31,28 +31,29 @@ body{
 .logo{
   display:flex;
   align-items:center;
-  gap:10px;
+  gap:15px;
 }
 
 .logo-circle{
-  width:50px;
-  height:50px;
+  width:80px;
+  height:80px;
   border-radius:50%;
-  background:#ffb6c1;
-  color:#fff;
+  background:#ffdde6; /* وردي فاتح جدًا */
+  color:#a12c4a;
   display:flex;
   justify-content:center;
   align-items:center;
   font-weight:bold;
-  font-size:18px;
+  font-size:40px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.2);
 }
 
 .logo-text h1{
-  font-size:18px;
+  font-size:22px;
 }
 
 .logo-text span{
-  font-size:12px;
+  font-size:14px;
   color:#555;
 }
 
@@ -67,66 +68,73 @@ nav a:hover{
   text-decoration:underline;
 }
 
-/* Hero */
+/* ===== Hero ===== */
 .hero{
   text-align:center;
-  padding:60px 20px;
+  padding:80px 20px;
 }
 
 .hero h2{
-  font-size:28px;
+  font-size:32px;
   color:#a12c4a;
 }
 
 .hero p{
   margin-top:10px;
-  font-size:16px;
+  font-size:18px;
 }
 
-/* Contact */
+/* ===== Contact ===== */
 .contact{
-  padding:50px 20px;
+  padding:60px 20px;
 }
 
 .contact-box{
-  max-width:500px;
+  max-width:600px;
   margin:auto;
   background:#fff;
-  padding:30px;
-  border-radius:12px;
-  box-shadow:0 6px 20px rgba(0,0,0,0.12);
+  padding:35px;
+  border-radius:15px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.12);
 }
 
 .contact-box h2{
   text-align:center;
-  margin-bottom:20px;
+  margin-bottom:15px;
   color:#a12c4a;
+}
+
+.contact-box p{
+  text-align:center;
+  margin-bottom:20px;
+  font-size:15px;
+  color:#555;
 }
 
 .contact-box input,
 .contact-box textarea{
   width:100%;
-  padding:12px;
+  padding:14px;
   margin-bottom:15px;
   border:1px solid #ccc;
-  border-radius:8px;
-  font-size:14px;
+  border-radius:10px;
+  font-size:15px;
 }
 
 textarea{
-  min-height:120px;
+  min-height:140px;
 }
 
 .contact-box button{
   width:100%;
-  padding:12px;
+  padding:14px;
   background:#a12c4a;
   color:white;
   border:none;
   cursor:pointer;
   font-size:16px;
-  border-radius:8px;
-  transition: background 0.3s;
+  border-radius:10px;
+  transition: all 0.3s ease;
 }
 
 .contact-box button:hover{
@@ -135,16 +143,16 @@ textarea{
 
 #status{
   text-align:center;
-  margin-top:10px;
+  margin-top:12px;
   font-weight:bold;
 }
 
-/* Footer */
+/* ===== Footer ===== */
 .footer{
-  background: rgba(255,182,193,0.9);
-  padding:20px;
+  background: rgba(255,182,193,0.95);
+  padding:25px 20px;
   text-align:center;
-  margin-top:40px;
+  margin-top:50px;
   border-top:1px solid #ffc0cb;
 }
 
@@ -162,4 +170,16 @@ textarea{
 
 .footer .social a:hover{
   color:#a12c4a;
+}
+
+/* Responsive */
+@media (max-width:768px){
+  .header .container{
+    flex-direction:column;
+    gap:15px;
+  }
+  nav a{
+    margin-left:0;
+    margin-right:10px;
+  }
 }
