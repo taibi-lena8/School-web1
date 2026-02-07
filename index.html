@@ -11,41 +11,42 @@
 <header class="header">
   <div class="container">
     <div class="logo">
-      <div class="logo-circle">MH</div>
+      <div class="logo-circle">M</div>
       <div class="logo-text">
         <h1>متوسطة مرخوفي حسين</h1>
         <span>Merkhofi Hussein Middle School</span>
       </div>
     </div>
     <nav>
-      <a href="#">الرئيسية</a>
-      <a href="#contact">اتصل بنا</a>
+      <a href="#">الرئيسية | Home</a>
+      <a href="#contact">اتصل بنا | Contact</a>
     </nav>
   </div>
 </header>
 
 <section class="hero">
   <h2>مرحبا بكم في متوسطة مرخوفي حسين</h2>
-  <p>مؤسسة تعليمية تسعى للتميز الأكاديمي والتواصل الفعّال</p>
+  <p>مؤسسة تعليمية تسعى للتميز الأكاديمي والتواصل الفعّال | An educational institution striving for academic excellence and effective communication</p>
 </section>
 
 <section id="contact" class="contact">
   <div class="contact-box">
-    <h2>اتصل بنا</h2>
+    <h2>اتصل بنا | Contact Us</h2>
+    <p>يسعدنا تواصلكم معنا لأي استفسار أو ملاحظة | We are happy to hear from you for any inquiry or comment</p>
     <form id="contact-form">
-      <input type="text" name="name" placeholder="الاسم الكامل" required>
-      <input type="email" name="email" placeholder="البريد الإلكتروني" required>
-      <textarea name="message" placeholder="اكتب رسالتك هنا..." required></textarea>
-      <button type="submit" id="submit-btn">إرسال</button>
+      <input type="text" name="name" placeholder="الاسم الكامل | Full Name" required>
+      <input type="email" name="email" placeholder="البريد الإلكتروني | Email" required>
+      <textarea name="message" placeholder="اكتب رسالتك هنا | Write your message here..." required></textarea>
+      <button type="submit" id="submit-btn">إرسال | Send</button>
     </form>
     <p id="status"></p>
   </div>
 </section>
 
 <footer class="footer">
-  <p>© 2026 متوسطة مرخوفي حسين – جميع الحقوق محفوظة</p>
+  <p>© 2026 متوسطة مرخوفي حسين – جميع الحقوق محفوظة | All rights reserved</p>
   <div class="social">
-    <a href="https://www.facebook.com/profile.php?id=61572767962501" target="_blank">📘 فيسبوك</a>
+    <a href="https://www.facebook.com/profile.php?id=61572767962501" target="_blank">📘 Facebook</a>
   </div>
 </footer>
 
@@ -57,14 +58,14 @@ const btn = document.getElementById("submit-btn");
 form.addEventListener("submit", function(e){
   e.preventDefault();
   btn.disabled = true;
-  btn.innerText = "جارٍ الإرسال...";
+  btn.innerText = "جارٍ الإرسال... | Sending...";
 
   setTimeout(() => {
-    status.innerText = "✅ تم إرسال رسالتك بنجاح، سنرد عليك قريبًا";
+    status.innerText = "✅ تم إرسال رسالتك بنجاح، سنرد عليك قريبًا | Your message has been sent successfully.";
     status.style.color = "green";
     form.reset();
     btn.disabled = false;
-    btn.innerText = "إرسال";
+    btn.innerText = "إرسال | Send";
   }, 1500);
 });
 </script>
