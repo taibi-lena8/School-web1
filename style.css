@@ -1,23 +1,21 @@
 *{
   box-sizing:border-box;
-  font-family: "Segoe UI", Tahoma, sans-serif;
   margin:0;
   padding:0;
+  font-family:"Segoe UI", Tahoma, sans-serif;
 }
 
 body{
-  background: linear-gradient(135deg, #f0f6fb, #e1f0fa); /* وردي بارد */
+  background: linear-gradient(135deg,#f0f6fb,#e1f0fa);
   color:#333;
-  line-height:1.6;
 }
 
 /* Header */
 .header{
-  background: rgba(220,235,245,0.95);
+  background: rgba(255,255,255,0.9);
   padding:20px 0;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow:0 2px 6px rgba(0,0,0,0.1);
 }
-
 .header .container{
   max-width:1100px;
   margin:auto;
@@ -25,36 +23,29 @@ body{
   justify-content:space-between;
   align-items:center;
   flex-wrap:wrap;
-  padding:0 15px;
 }
-
 .logo{
   display:flex;
   align-items:center;
   gap:15px;
 }
-
 .logo-svg{
   width:120px;
   height:120px;
 }
-
 .logo-text h1{
   font-size:26px;
 }
-
 .logo-text span{
   font-size:14px;
   color:#555;
 }
-
 nav a{
   text-decoration:none;
   color:#333;
   margin-left:20px;
   font-weight:500;
 }
-
 nav a:hover{
   text-decoration:underline;
 }
@@ -64,23 +55,20 @@ nav a:hover{
   text-align:center;
   padding:80px 20px;
 }
-
 .hero h2{
   font-size:32px;
   color:#a12c4a;
 }
-
 .hero p{
-  margin-top:10px;
   font-size:18px;
   color:#555;
+  margin-top:10px;
 }
 
 /* Contact */
 .contact{
   padding:60px 20px;
 }
-
 .contact-box{
   max-width:600px;
   margin:auto;
@@ -89,13 +77,11 @@ nav a:hover{
   border-radius:15px;
   box-shadow:0 8px 25px rgba(0,0,0,0.12);
 }
-
 .contact-box h2{
   text-align:center;
   margin-bottom:15px;
   color:#a12c4a;
 }
-
 .contact-box input,
 .contact-box textarea{
   width:100%;
@@ -105,11 +91,9 @@ nav a:hover{
   border-radius:10px;
   font-size:15px;
 }
-
 textarea{
   min-height:140px;
 }
-
 .contact-box button{
   width:100%;
   padding:14px;
@@ -119,13 +103,11 @@ textarea{
   cursor:pointer;
   font-size:16px;
   border-radius:10px;
-  transition: all 0.3s ease;
+  transition:0.3s;
 }
-
 .contact-box button:hover{
   background:#922958;
 }
-
 #status{
   text-align:center;
   margin-top:12px;
@@ -134,32 +116,33 @@ textarea{
 
 /* Footer */
 .footer{
-  background: rgba(220,235,245,0.95);
+  background: rgba(255,255,255,0.95);
   padding:25px 20px;
   text-align:center;
-  margin-top:50px;
   border-top:1px solid #c8dceb;
 }
-
 .footer .social{
   margin-top:10px;
   display:flex;
   justify-content:center;
   gap:15px;
 }
-
-.footer .social a svg{
+.footer .social img{
   width:30px;
   height:30px;
-  transition: transform 0.3s;
+  transition:transform 0.3s;
 }
-
-.footer .social a:hover svg{
-  transform: scale(1.2);
+.footer .social img:hover{
+  transform:scale(1.2);
+}
+.footer-bottom{
+  margin-top:15px;
+  font-size:13px;
+  color:#555;
 }
 
 /* Responsive */
-@media (max-width:768px){
+@media(max-width:768px){
   .header .container{
     flex-direction:column;
     gap:15px;
@@ -171,4 +154,4 @@ textarea{
   .footer .social{
     gap:10px;
   }
-}
+  }
