@@ -1,0 +1,165 @@
+*{
+  box-sizing:border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  margin:0;
+  padding:0;
+}
+
+body{
+  background: linear-gradient(135deg, #ffe6f0, #fff0f5);
+  color:#333;
+  line-height:1.6;
+}
+
+/* Header */
+.header{
+  background: rgba(255,182,193,0.9);
+  padding:15px 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.header .container{
+  max-width:1100px;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  padding:0 15px;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.logo-circle{
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  background:#ffb6c1;
+  color:#fff;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-weight:bold;
+  font-size:18px;
+}
+
+.logo-text h1{
+  font-size:18px;
+}
+
+.logo-text span{
+  font-size:12px;
+  color:#555;
+}
+
+nav a{
+  text-decoration:none;
+  color:#333;
+  margin-left:20px;
+  font-weight:500;
+}
+
+nav a:hover{
+  text-decoration:underline;
+}
+
+/* Hero */
+.hero{
+  text-align:center;
+  padding:60px 20px;
+}
+
+.hero h2{
+  font-size:28px;
+  color:#a12c4a;
+}
+
+.hero p{
+  margin-top:10px;
+  font-size:16px;
+}
+
+/* Contact */
+.contact{
+  padding:50px 20px;
+}
+
+.contact-box{
+  max-width:500px;
+  margin:auto;
+  background:#fff;
+  padding:30px;
+  border-radius:12px;
+  box-shadow:0 6px 20px rgba(0,0,0,0.12);
+}
+
+.contact-box h2{
+  text-align:center;
+  margin-bottom:20px;
+  color:#a12c4a;
+}
+
+.contact-box input,
+.contact-box textarea{
+  width:100%;
+  padding:12px;
+  margin-bottom:15px;
+  border:1px solid #ccc;
+  border-radius:8px;
+  font-size:14px;
+}
+
+textarea{
+  min-height:120px;
+}
+
+.contact-box button{
+  width:100%;
+  padding:12px;
+  background:#a12c4a;
+  color:white;
+  border:none;
+  cursor:pointer;
+  font-size:16px;
+  border-radius:8px;
+  transition: background 0.3s;
+}
+
+.contact-box button:hover{
+  background:#922958;
+}
+
+#status{
+  text-align:center;
+  margin-top:10px;
+  font-weight:bold;
+}
+
+/* Footer */
+.footer{
+  background: rgba(255,182,193,0.9);
+  padding:20px;
+  text-align:center;
+  margin-top:40px;
+  border-top:1px solid #ffc0cb;
+}
+
+.footer .social{
+  margin-top:10px;
+}
+
+.footer .social a{
+  text-decoration:none;
+  font-size:18px;
+  margin:0 5px;
+  color:#333;
+  font-weight:bold;
+}
+
+.footer .social a:hover{
+  color:#a12c4a;
+}
